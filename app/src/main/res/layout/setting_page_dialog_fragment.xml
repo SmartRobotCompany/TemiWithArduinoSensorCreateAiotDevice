@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F4EFCA"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:id = "@+id/setting_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;語音功能&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/tts_mode_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;溫度不舒適上限值&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/temperature_high_value_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;溫度不舒適下限值&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/temperature_low_value_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;濕度不舒適上限值&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/humidity_high_value_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;濕度不舒適下限值&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/humidity_low_value_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;按鈕開燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/open_light_button_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;按鈕關燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/close_light_button_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;開門開燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/open_light_magnet_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;關門開燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/close_light_magnet_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;口罩開燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/open_light_pixetto_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;口罩關燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/close_light_pixetto_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;溫溼度計開燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/open_light_th_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="&lt;溫溼度計關燈語音詞&gt;"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/close_light_th_edittext"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setting_apply_button"
+            android:layout_weight="1"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:text="確認"
+            android:textSize="50sp"
+            android:background="@drawable/button_setting_settings_apply"/>
+
+        <Button
+            android:id="@+id/setting_cancel_button"
+            android:layout_weight="1"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:text="取消"
+            android:textSize="50sp"
+            android:background="@drawable/button_setting_settings_cancel"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

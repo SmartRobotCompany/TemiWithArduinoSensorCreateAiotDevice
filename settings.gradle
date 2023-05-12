@@ -1,0 +1,2 @@
+rootProject.name = "Temi With AIOT Device"
+include ':app'
